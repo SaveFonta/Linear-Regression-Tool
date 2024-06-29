@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.9.4/jstat.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Linear Regression Analysis Tool</h1>
+        <p>Enter your data points below:</p>
+        <div class="input-group">
+            <label for="xValues">X Values (comma-separated): </label>
+            <input type="text" id="xValues" required>
+        </div>
+        <div class="input-group">
+            <label for="yValues">Y Values (comma-separated): </label>
+            <input type="text" id="yValues" required>
+        </div>
+        <button id="calculateBtn">Calculate Regression</button>
+        <div class="result" id="result"></div>
+        <canvas id="scatterPlot" width="400" height="200"></canvas>
+        <div class="additional-stats" id="additionalStats">
+            <h2>Additional Statistics</h2>
+            <div id="pearsonCorrelation"></div>
+            <div id="theoreticalYValues"></div>
+            <div id="meanAndVariance"></div>
+            <div id="tTestBeta"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
